@@ -1,0 +1,12 @@
+$(document).ready(function(){
+// disable right click action
+document.oncontextmenu = document.body.oncontextmenu = function() {
+    return false;
+};
+// disable ctrl with p print option
+$(document).on("keyup keydown", function(e) {
+    if (e.ctrlKey && e.keyCode == 80) {
+        return false;
+    }
+});
+});
