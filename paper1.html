@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Addition Example</title>
+  </head>
+  <body>
+    <h2>Click button to see result</h2>
+
+    <button onclick="addNumbers()">Click Me</button>
+
+    <p id="result"></p>
+
+    <script>
+      function addNumbers() {
+        var a = 10;
+        var b = 20;
+        var sum = a + b;
+
+        document.getElementById("result").innerHTML = "Result: " + sum;
+      }
+    </script>
+  </body>
+</html>
